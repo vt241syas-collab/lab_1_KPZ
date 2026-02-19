@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ColorOptions">
+    <Position X="14" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAQAAAAAAAAAQ=</HashCode>
+      <FileName>ColorOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameSettings">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAgAAAAAAAAAACAAAAKEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>GameSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeGameWPF.Helpers.ColorSettingsManager">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAgAAKAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ColorSettingsManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_colorOptions" />
+      <Field Name="_settings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SnakeGameWPF.GameCore.Logic.Food">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAYAA=</HashCode>
+      <FileName>Food.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeGameWPF.GameCore.Logic.GameEngine">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAABkCAABAAAAAAACIAAAACAQAAgCAAAA=</HashCode>
+      <FileName>GameEngine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="settings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SnakeGameWPF.GameCore.Logic.Snake">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAIAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Snake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeGameWPF.GameCore.Models.GameObject">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAggAgAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeGameWPF.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCABEgQAAgAAAAAAAAAAAAIAAAQABAABgAAAQAAgA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="engine" />
+      <Field Name="gameSettings" />
+      <Field Name="colorOptions" />
+      <Field Name="colorManager" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="SnakeGameWPF.GameCore.Logic.Direction">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9.16" />
+</ClassDiagram>
