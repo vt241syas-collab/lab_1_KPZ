@@ -57,33 +57,38 @@ namespace SnakeGameWPF
             timer.Start();
         }
 
-        private void GameTick(object sender, EventArgs e)
-        {
-            engine.Update();
+       private void GameTick(object sender, EventArgs e)
+{
+    engine.Update();
+    
+    if (engine.IsGameOver)
+    {
+        ProcessGameOver();
+        return;
+    }
 
-            if (engine.IsGameOver)
-            {
-                timer.Stop();
-                FinalScoreText.Text = $"Ваш рахунок: {engine.Score}";
-                GameOverOverlay.Visibility = Visibility.Visible;
-                StartButton.Visibility = Visibility.Visible;
-                return;
-            }
+    RefreshDisplay();
+    UpdateGameSpeed();
+}
 
-            DrawGame();
+private void ProcessGameOver()
+{
+    timer.Stop();
+    FinalScoreText.Text = $"Ваш рахунок: {engine.Score}";
+    GameOverOverlay.Visibility = Visibility.Visible;
+    StartButton.Visibility = Visibility.Visible;
+}
 
-            ScoreText.Text = $"Рахунок: {engine.Score}";
-            if (engine.Score > highScore)
-            {
-                highScore = engine.Score;
-                HighScoreText.Text = $"Рекорд: {highScore}";
-            }
-
-            if (engine.Score % 5 == 0 && timer.Interval.TotalMilliseconds > 50)
-            {
-                timer.Interval = TimeSpan.FromMilliseconds(timer.Interval.TotalMilliseconds - gameSettings.SpeedStep);
-            }
-        }
+private void RefreshDisplay()
+{
+    DrawGame();
+    ScoreText.Text = $"Рахунок: {engine.Score}";
+    if (engine.Score > highScore)
+    {
+        highScore = engine.Score;
+        HighScoreText.Text = $"Рекорд: {highScore}";
+    }
+}
 
         private void DrawGame()
         {
