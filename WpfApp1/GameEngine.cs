@@ -88,6 +88,17 @@ namespace SnakeGameWPF.GameCore.Logic
             this.settings = settings;
             ResetGame();
         }
+        private Point GetNextHeadPosition(Point currentHead, Direction direction)
+     {
+    return direction switch
+    {
+        Direction.Up => new Point(currentHead.X, currentHead.Y - 1),
+        Direction.Down => new Point(currentHead.X, currentHead.Y + 1),
+        Direction.Left => new Point(currentHead.X - 1, currentHead.Y),
+        Direction.Right => new Point(currentHead.X + 1, currentHead.Y),
+        _ => currentHead
+    };
+}
 
         private void GenerateFood()
         {
