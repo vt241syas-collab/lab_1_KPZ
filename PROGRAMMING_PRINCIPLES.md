@@ -6,7 +6,7 @@
 
 ### 2. KISS (Keep It Simple, Stupid)
 **Опис:** Клас Food реалізований максимально просто.
-**Код:** [Food.cs](https://github.com/vt241syas-collab/lab_1_KPZ/blob/main/Food.cs)
+**Код:** [Food.cs](https://github.com/vt241syas-collab/lab_1_KPZ/blob/main/WpfApp1/Food.cs)
 
 ### 3. Encapsulation (Інкапсуляція)
 **Опис:** Використання властивостей з приватними сеттерами у GameEngine.
