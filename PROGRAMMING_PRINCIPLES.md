@@ -5,9 +5,9 @@
 **Код:** [MainWindow.xaml.cs L48-63](https://github.com/vt241syas-collab/lab_1_KPZ/blob/main/WpfApp1/MainWindow.xaml.cs)
 
 ### 2. KISS (Keep It Simple, Stupid)
-**Опис:** Клас Food реалізований максимально просто.
+**Опис:** Намагання зробити код максимально простим. Клас `Food` містить лише необхідні координати без зайвої складності.
 **Код:** [Food.cs](https://github.com/vt241syas-collab/lab_1_KPZ/blob/main/WpfApp1/Food.cs)
 
 ### 3. Encapsulation (Інкапсуляція)
-**Опис:** Використання властивостей з приватними сеттерами у GameEngine.
+**Опис:** Стан гри (Score, IsGameOver) закритий для прямої зміни ззовні через використання властивостей з приватними сеттерами.
 **Код:** [GameEngine.cs](https://github.com/vt241syas-collab/lab_1_KPZ/blob/main/WpfApp1/GameEngine.cs)
