@@ -25,18 +25,22 @@ namespace SnakeGameWPF.GameCore.Logic
         }
 
         public void ResetGame()
-        {
-            Snake = new List<Point>
-            {
-                new Point(10, 10),
-                new Point(9, 10),
-                new Point(8, 10)
-            };
-            CurrentDirection = Direction.Right;
-            Score = 0;
-            IsGameOver = false;
-            GenerateFood();
-        }
+{
+   
+    int startX = columns / 2;
+    int startY = rows / 2;
+
+    Snake = new List<Point>
+    {
+        new Point(startX, startY),
+        new Point(startX - 1, startY),
+        new Point(startX - 2, startY)
+    };
+    CurrentDirection = Direction.Right;
+    Score = 0;
+    IsGameOver = false;
+    GenerateFood();
+}
 
         public void Update()
         {
